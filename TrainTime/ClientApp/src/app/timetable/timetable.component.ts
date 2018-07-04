@@ -1,5 +1,6 @@
 import { Component, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { TimetableService } from './timetable.service';
 
 @Component({
   selector: 'app-timetable-component',
@@ -9,19 +10,17 @@ export class TimetableComponent {
   public timetable: Timetable;
   public timetables :Timetable[];
   public serviceEnum = ServiceEnum;
-  constructor(public http: HttpClient, @Inject('BASE_URL') public baseUrl: string) {
+  constructor(public timetableService:TimetableService) {
     this.timetable = new Timetable();
     this.getTimetables();
   }
 
   public save() {
-    this.http.post(this.baseUrl + 'api/Timetable/', this.timetable);
+    this.timetableService.save(this.timetable);
   }
 
   public getTimetables(){
-  this.http.get<Timetable[]>(this.baseUrl + 'api/Timetable').subscribe(result => {
-      this.timetables = result;
-    }, error => console.error(error));
+    this.timetables  = this.timetableService.getTimetables();
   }
 
   public lineChange(_line: number) {
