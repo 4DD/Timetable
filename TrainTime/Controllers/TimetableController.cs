@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using TT.Domain;
+using TrainTime.Model;
 using TT.Business;
 
 namespace TrainTime.Controllers
@@ -11,7 +11,7 @@ namespace TrainTime.Controllers
     [Route("api/[controller]")]
     public class TimetableController : Controller
     {
-        private ITimetableManger _timetableManager;
+        private TimetableManager _timetableManager;
         public TimetableController(ITimetableManger timetableManager){
             _timetableManager = timetableManager;
         }
