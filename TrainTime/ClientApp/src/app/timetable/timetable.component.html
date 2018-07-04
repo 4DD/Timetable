@@ -1,0 +1,35 @@
+<h1>Timetables</h1>
+<div class="row">
+    <div class="col-md-4">From</div>
+    <div class="col-md-8">
+        <select (change)="lineChange($event.target.value)">
+            <option value="">Please select</option>
+            <option value="0">Ballarat</option>
+            <option value="1">Bendigo </option>
+            <option value="3">Geelong </option>
+        </select>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-4">Date</div>
+    <div class="col-md-8">
+        <input [(ngModel)]="timetable.date" placeholder="yyyy-mm-dd" />
+    </div>
+</div>
+<div class="row">
+        <div class="col-md-4">Time</div>
+        <div class="col-md-8">
+            <input [(ngModel)]="timetable.time" placeholder="HH:MM" />
+        </div>
+    </div>
+<div class="row">
+    <div class="col-md-4">Type of Service</div>
+    <div class="col-md-8">
+        <select (change)="serviceChange($event.target.value)">
+            <option value="">Please select</option>
+            <option value="{{serviceEnum.TRAIN}}">TRAIN</option>
+            <option value="{{serviceEnum.COACH}}">COACH</option>
+        </select>
+    </div>
+</div>
+<button (click)="save()">Save</button>

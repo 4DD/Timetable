@@ -1,0 +1,11 @@
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/obj/Debug/netstandard2.0/TT.Business.csproj.CoreCompileInputs.cache
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/obj/Debug/netstandard2.0/TT.Business.AssemblyInfoInputs.cache
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/obj/Debug/netstandard2.0/TT.Business.AssemblyInfo.cs
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/bin/Debug/netstandard2.0/TT.Business.deps.json
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/bin/Debug/netstandard2.0/TT.Business.dll
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/bin/Debug/netstandard2.0/TT.Business.pdb
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/bin/Debug/netstandard2.0/TT.Domain.dll
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/bin/Debug/netstandard2.0/TT.Domain.pdb
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/obj/Debug/netstandard2.0/TT.Business.csprojResolveAssemblyReference.cache
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/obj/Debug/netstandard2.0/TT.Business.dll
+/Users/Dinesh/Documents/TrainTime/TrainTime/TT.Business/obj/Debug/netstandard2.0/TT.Business.pdb
